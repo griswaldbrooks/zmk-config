@@ -14,42 +14,42 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |      |
-// |      |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// |      |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | ALT | LWR | SPC |  | SHFT | RSE | CTRL |
+// |      |  Q  |  W  |  E  |  R  |  T    |   |  Y  |  U   |  I  |  O  |  P  |      |
+// |      |  A  |  S  |  D  |  F  |  G    |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// |      |  Z  |  X  |  C  |  V  |  B    |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | ALT | LWR | LSHFT |   | SPC | RSE | CTRL |
                         bindings = <
    &trans &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &trans
    &trans &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &trans &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LALT &mo 1 &kp SPC    &kp RSHFT &mo 2 &kp RCTRL
+               &kp LALT &mo 1 &kp LSHFT   &kp SPC &mo 2 &kp RCTRL
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  | BKSP|      |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT | ENT |      |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |     |      |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | ENT |   | TAB |     | ALT |
+//                    |     |     |     |   | TAB |     | ENT |
                         bindings = <
    &trans  &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &trans &trans
-   &trans  &kp ESC &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT      &kp RET &trans
+   &trans  &kp ESC &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT      &trans &trans
    &trans  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                        &kp LGUI     &trans       &kp RET        &kp TAB  &trans   &kp RALT
+                                        &trans     &trans       &trans        &kp TAB  &trans   &kp RET
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  #  |  {  |  }  | "|" |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |  @  |  $  |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |     |  }  | "|" |  ~   |
-//                    | GUI |     | DEL |   | ENT |     | ALT |
+// |  TAB |  !  |  #  |  {  |  }  | "|"  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |  @  |  $  |     |     |      |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |      |   |  _  |  +  |     |  }  | "|" |  ~   |
+//                    | DEL |     | BKSP |   |     |     |     |
                         bindings = <
    &kp  TAB  &kp EXCL &kp HASH &kp LBRC &kp RBRC &kp PIPE    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &kp AT   &kp DLLR &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans   &trans   &trans   &trans      &kp UNDER &kp PLUS  &trans        &kp RBRC &trans &kp TILDE
-                               &kp LGUI &trans   &kp DEL     &kp RET   &trans    &kp RALT
+                               &kp DEL &trans   &kp BSPC     &trans    &trans    &trans
                         >;
                 };
         };
