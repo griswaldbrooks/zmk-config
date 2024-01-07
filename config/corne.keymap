@@ -28,12 +28,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // ||  !  |  $  |  &  |  ~  |  +  |   |  {  |  }  |     |     |     ||
-// ||  @  |  %  |     |  `  |  *  |   |  (  |  )  | "|" |     |  '  ||
+// ||  @  |  %  |  =  |  `  |  *  |   |  (  |  )  | "|" |     |  '  ||
 // ||  #  |  ^  |     |  _  |  -  |   |  [  |  ]  |     |     |  \  ||
 //              |     |     |     |   | TAB |     | ENT |
                         bindings = <
    &trans &kp EXCL &kp DLLR &kp AMPS &kp TILD  &kp PLUS     &kp LBRC &kp RBRC &trans   &trans &trans   &trans
-   &trans &kp AT   &kp PRCT &trans   &kp GRAV  &kp STAR     &kp LPAR &kp RPAR &kp PIPE &trans &kp SQT  &trans
+   &trans &kp AT   &kp PRCT &kp EQL  &kp GRAV  &kp STAR     &kp LPAR &kp RPAR &kp PIPE &trans &kp SQT  &trans
    &trans &kp HASH &kp CRRT &trans   &kp UNDER &kp MINUS    &kp LBKT &kp RBKT &trans   &trans &kp BSLH &trans
                             &trans   &trans    &trans       &kp TAB  &trans   &kp RET
                         >;
