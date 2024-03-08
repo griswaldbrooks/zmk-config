@@ -23,6 +23,20 @@
             key-positions = <10 34>;
             layers = <3>;
         };
+
+        super {
+            bindings = <&super>;
+            key-positions = <37 27>;
+        };
+    };
+
+    macros {
+        super: super {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &mo 4>;
+            label = "SUPER";
+        };
     };
 
     keymap {
@@ -79,6 +93,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        super {
+            bindings = <
+&trans  &trans   &trans  &trans  &trans     &trans            &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP        &kp END    &trans  &trans
+&trans  &kp ESC  &trans  &trans  &kp GRAVE  &trans            &kp LEFT  &kp DOWN       &kp UP             &kp RIGHT  &trans  &trans
+&trans  &trans   &trans  &trans  &trans     &trans            &trans    &trans         &trans             &trans     &trans  &trans
+                         &trans  &trans     &kp LEFT_SHIFT    &kp TAB   &kp ENTER      &kp RIGHT_CONTROL
             >;
         };
     };
