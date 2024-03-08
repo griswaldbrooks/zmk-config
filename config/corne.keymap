@@ -25,15 +25,6 @@
         };
     };
 
-    macros {
-        super: super {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &mo 4>;
-            label = "SUPER";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -60,10 +51,10 @@
             //              |     |     |     |   | TAB |     | ENT |
 
             bindings = <
-&trans  &kp EXCL  &kp PRCNT  &kp AMPS   &kp TILDE  &kp PLUS     &kp LBRC  &kp RBRC  &trans    &trans  &trans    &trans
-&trans  &kp AT    &kp DLLR   &kp EQUAL  &kp GRAVE  &kp STAR     &kp LPAR  &kp RPAR  &kp PIPE  &trans  &kp SQT   &trans
-&trans  &kp HASH  &kp CARET  &super     &kp UNDER  &kp MINUS    &kp LBKT  &kp RBKT  &trans    &trans  &kp BSLH  &trans
-                             &trans     &trans     &trans       &kp TAB   &trans    &kp RET
+&trans  &kp EXCL  &kp PRCNT  &kp AMPS        &kp TILDE  &kp PLUS     &kp LBRC  &kp RBRC  &trans    &trans  &trans    &trans
+&trans  &kp AT    &kp DLLR   &kp EQUAL       &kp GRAVE  &kp STAR     &kp LPAR  &kp RPAR  &kp PIPE  &trans  &kp SQT   &trans
+&trans  &kp HASH  &kp CARET  &lt 4 LEFT_GUI  &kp UNDER  &kp MINUS    &kp LBKT  &kp RBKT  &trans    &trans  &kp BSLH  &trans
+                             &trans          &trans     &trans       &kp TAB   &trans    &kp RET
             >;
         };
 
@@ -93,10 +84,10 @@
 
         super {
             bindings = <
-&trans  &trans   &trans  &trans  &trans     &trans            &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP        &kp END    &trans  &trans
-&trans  &kp ESC  &trans  &trans  &kp GRAVE  &trans            &kp LEFT  &kp DOWN       &kp UP             &kp RIGHT  &trans  &trans
-&trans  &trans   &trans  &trans  &trans     &trans            &trans    &trans         &trans             &trans     &trans  &trans
-                         &trans  &trans     &kp LEFT_SHIFT    &kp TAB   &kp ENTER      &kp RIGHT_CONTROL
+&trans  &trans       &trans  &trans  &trans         &trans                &kp RG(HOME)  &kp RG(PAGE_DOWN)  &kp RG(PAGE_UP)        &kp RG(END)    &trans  &trans
+&trans  &kp LG(ESC)  &trans  &trans  &kp LG(GRAVE)  &trans                &kp RG(LEFT)  &kp RG(DOWN)       &kp RG(UP)             &kp RG(RIGHT)  &trans  &trans
+&trans  &trans       &trans  &trans  &trans         &trans                &trans        &trans             &trans                 &trans         &trans  &trans
+                             &trans  &trans         &kp LG(LEFT_SHIFT)    &kp RG(TAB)   &kp RG(ENTER)      &kp RG(RIGHT_CONTROL)
             >;
         };
     };
