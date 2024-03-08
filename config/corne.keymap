@@ -84,7 +84,7 @@
 
         super {
             bindings = <
-&trans  &trans              &trans  &trans  &trans         &trans    &kp RG(HOME)  &kp RG(PAGE_DOWN)  &kp RG(PAGE_UP)        &kp RG(END)    &trans  &trans
+&trans  &kp LG(Q)           &trans  &trans  &trans         &trans    &kp RG(HOME)  &kp RG(PAGE_DOWN)  &kp RG(PAGE_UP)        &kp RG(END)    &trans  &trans
 &trans  &kp LG(ESC)         &trans  &trans  &kp LG(GRAVE)  &trans    &kp RG(LEFT)  &kp RG(DOWN)       &kp RG(UP)             &kp RG(RIGHT)  &trans  &trans
 &trans  &kp LG(LEFT_SHIFT)  &trans  &trans  &trans         &trans    &trans        &trans             &trans                 &trans         &trans  &trans
                                     &trans  &trans         &trans    &kp RG(TAB)   &kp RG(ENTER)      &kp RG(RIGHT_CONTROL)
